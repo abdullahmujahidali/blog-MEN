@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-abdullah:Test123@cluster0.3uu95.mongodb.net/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect("mongodb+srv://admin-abdullah:abdullah123@cluster0.lkglm.mongodb.net/blogDB?retryWrites=true&w=majority", { useNewUrlParser: true,  useFindAndModify: false });
 
 const postSchema = {
   title: String,
